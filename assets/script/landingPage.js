@@ -22,5 +22,5 @@ const subtitle = document.createElement("p")
 const link = document.createElement("a")
     link.innerText = "Saiba Mais"
     link.classList.add("link")
-    link.href = "/homePage.html"
+    link.href = "./homePage.html"
     heroContainer.appendChild(link)
