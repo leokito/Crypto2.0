@@ -260,3 +260,7 @@ li a:hover {
   border-radius: 8px;
   border: none;
 }
+
+.card button:hover {
+  filter: brightness(0.8)
+}
