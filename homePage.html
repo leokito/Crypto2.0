@@ -20,180 +20,104 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 
 <body>
+    <!--Menu de Navegação-->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+          Uma caixa de seleção falsa/oculta é usada como receptor de cliques,
+           então você pode usar o seletor :checked nela.
+          -->
+            <input type="checkbox" />
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="blog.html">Blog</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="imagens.html">Imagens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="artigos.html">Artigos</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Redes sociais
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"></a>Linkedin</li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"></a>Github</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#"></a>Instagram</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+         Pena que o menu tem que estar dentro do botão
+          mas ei, é pura magia CSS.
+          -->
+            <ul id="menu">
+                <a href="#">
+                    <li>Início</li>
+                </a>
+                <br>
+                <a href="#">
+                    <li>Sobre</li>
+                </a>
+                <br>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <br>
+                <a href="#">
+                    <li>Contatos</li>
+                </a>
+                <br>
+                <a href="#">
+                    <li>Tecnologias</li>
+                </a>
+                <br>
+                <a href="https://erikterwan.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
         </div>
     </nav>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://www.infomoney.com.br/wp-content/uploads/2021/08/Criptos-e1628873886287.jpg?resize=854%2C515&quality=50&strip=all "
-                    class="d-block w-100" alt="..." height="550px" width="100px">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>incríveis curiosidades sobre Bitcoin</h5>
-                    <p>Bitcoin não foi a primeira criptomoeda criada.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.infoescola.com/wp-content/uploads/2019/01/criptomoedas-bitcoin-608089037.jpg"
-                    class="d-block w-100" alt="..." height="550px">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>incríveis curiosidades sobre Ethereum</h5>
-                    <p>O Ethereum é a segunda maior criptomoeda em valor de mercado, perdendo apenas para o Bitcoin.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://p7z2w8n8.rocketcdn.me/wp-content/uploads/2021/09/criptomoedas-tem-valorizacao-significante-no-mes-de-agosto.jpg"
-                    class="d-block w-100" alt="..." height="550px">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>incríveis curiosidades sobre Tether</h5>
-                    <p>Seus tokens são emitidos pela empresa de Hong Kong Tether Limited, que por sua vez é controlada
-                        pelos proprietários da Bitfinex</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <!--Fim sobre-->
+    <div class="corpo">
+    <!--Preços-->
+    <a id="precos"></a>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Valores</h1>
+        <p class="lead">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
     </div>
-
-    <div class="container mt-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <video src="assets/People - 84973.mp4" class="card-img-top" alt="..."></video>
-                    <div class="card-body">
-                        <h5 class="card-title">Bitcoin</h5>
-                        <h5 class="card-title">R$ 1000,00</h5>
-                        <p class="card-text">A criptomoeda surgiu em 2009, criada pelo Satoshi Nakamoto, como uma forma
-                            de facilitar as negociações pela internet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <video src="assets/Road - 84970.mp4" class="card-img-top" alt="..."></video>
-                    <div class="card-body">
-                        <h5 class="card-title">Ethereum</h5>
-                        <h5 class="card-title">R$ 500,00</h5>
-                        <p class="card-text">O foco do Ethereum é ser uma plataforma de programação para aplicações
-                            descentralizadas e contratos inteligentes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <video src="assets/Seoul - 21985.mp4" class="card-img-top" alt="..."></video>
-                    <div class="card-body">
-                        <h5 class="card-title">Tether</h5>
-                        <h5 class="card-title">R$ 100,00</h5>
-                        <p class="card-text">É uma criptomoeda com um preço fixo medido por uma moeda fiduciária, neste
-                            caso, os dólares americanos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <ul class="cardContainer"></ul>
     </div>
-
     <!--tabela cripto-->
     <div class="container tabela">
         <div class=" container bloco-branco">
-            <br>
-            <h1 class="text-center mb-5">Acompanhe a cotação!</h1>
+            <h1 class="text-dark">Alguns exemplos de criptomoedas</h2>
         </div>
         <iframe src="https://br.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&roundedCorners=true"
-            width="100%" height="300" frameborder="1" allowtransparency="true" marginwidth="1"
+            width="100%" height="300" frameborder="0" allowtransparency="true" marginwidth="0"
             marginheight="0"></iframe>
     </div>
-    <div class="hi">
-        <div class="row mt-5 d-flex align-items-center">
-            <h2 class="text-center mb-5">Matéria da semana</h2>
 
-            <div class="col-md-6">
-                <img src="https://investimentosenoticias.com.br/wp-content/uploads/2022/07/criptomoedas_IN-1.png"
-                    class="w-100" alt="">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-center mb-5">Confira as 3 criptomoedas mais promissoras para o 2º semestre!</h2>
-                <p> A consultoria especializada CoinMarketCap divulgou recentemente que existem hoje no mercado cerca
-                    de 20
-                    mil
-                    criptomoedas em circulação no mercado. Com as mais variadas funcionalidades, esses ativos acabam
-                    sendo
-                    ofuscados pelos criptos mainstream, mais famosos e que recebem grande atenção da mídia. Entretanto,
-                    um
-                    estudo realizado pela Mercurius Crypto, mostra que, mesmo com o mercado deteriorado, ocasionado pelo
-                    mercado
-                    tradicional que interpreta o mundo cripto como extensão, a partir de uma análise fundamentalista, é
-                    possível
-                    identificar criptomoedas com grande potencial para o próximo semestre.</h3>
-                <p> <a
-                        href="https://investimentosenoticias.com.br/bitcoins/confira-as-3-criptomoedas-mais-promissoras-para-o-2o-semestre/">Leia
-                        a matéria completa aqui...</a>
-                    </h5>
-            </div>
+    <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" width="50" height="200">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://www.infomoney.com.br/wp-content/uploads/2021/08/Criptos-e1628873886287.jpg?resize=854%2C515&quality=50&strip=all" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.infoescola.com/wp-content/uploads/2019/01/criptomoedas-bitcoin-608089037.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://p7z2w8n8.rocketcdn.me/wp-content/uploads/2021/09/criptomoedas-tem-valorizacao-significante-no-mes-de-agosto.jpg" alt="Third slide">
+          </div>
         </div>
-    </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <br>
 
     <!--area contato-->
     <div class="container">
@@ -218,8 +142,7 @@
                 <form action="">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            style="min-width:315px;max-width:500px;" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" style="min-width:315px;max-width:500px;" placeholder="name@example.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Assunto</label>
@@ -240,19 +163,15 @@
                 <div class="col-6 col-lg-2 offset-lg-1 mb-3">
                     <h5 class="home-footer">Contato</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-hotel"></i> R.Cap.
-                                Antônio Rosa, SP</a></li>
-                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-envelope"></i>
-                                gama@academy</a></li>
-                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-phone"></i> +01 234
-                                567 890</a></li>
+                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-hotel"></i> R.Cap. Antônio Rosa, SP</a></li>
+                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-envelope"></i> gama@academy</a></li>
+                        <li class="mb-2"><a href="#" class="p-0 text-light"><i class="fa-solid fa-phone"></i> +01 234 567 890</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2 mb-3">
                     <h5 class="home-footer">LinkedIn</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://www.linkedin.com/in/lucas-cuerci/"><i
-                                    class="fa-brands fa-linkedin"></i> LinkedIn Aluno 1</a></li>
+                        <li class="mb-2"><a href="https://www.linkedin.com/in/lucas-cuerci/"><i class="fa-brands fa-linkedin"></i> LinkedIn Aluno 1</a></li>
                         <li class="mb-2"><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn Aluno 2</a></li>
                         <li class="mb-2"><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn Aluno 3</a></li>
                     </ul>
@@ -260,8 +179,7 @@
                 <div class="col-6 col-lg-2 mb-3">
                     <h5 class="home-footer">Developers</h5>
                     <ul class="list-unstyled dale">
-                        <li class="mb-2"><a href="https://github.com/MohamedCuerci"><i class="fa-brands fa-github"></i>
-                                Github Aluno 1</a></li>
+                        <li class="mb-2"><a href="https://github.com/MohamedCuerci"><i class="fa-brands fa-github"></i> Github Aluno 1</a></li>
                         <li class="mb-2"><a href="#"><i class="fa-brands fa-github"></i> Github Aluno 2</a></li>
                         <li class="mb-2"><a href="#"><i class="fa-brands fa-github"></i> Github Aluno 3</a></li>
                     </ul>
@@ -269,18 +187,12 @@
                 <div class="col-6 col-lg-2 mb-3">
                     <h5 class="home-footer">Tecnologias</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><i
-                                    class="fa-brands fa-html5"></i> Html</a></li>
-                        <li class="mb-2"><a href="https://www.w3schools.com/css/"><i class="fa-brands fa-css3-alt"></i>
-                                Css</a></li>
-                        <li class="mb-2"><a href="https://trello.com/pt-BR"><i class="fa-brands fa-trello"></i>
-                                Trello</a></li>
-                        <li class="mb-2"><a href="https://www.figma.com/"><i class="fa-brands fa-figma"></i> Figma</a>
-                        </li>
-                        <li class="mb-2"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><i
-                                    class="fa-brands fa-js-square"></i> Javacript</a></li>
-                        <li class="mb-2"><a href="https://getbootstrap.com/"><i class="fa-brands fa-bootstrap"></i>
-                                bootstrap</a></li>
+                        <li class="mb-2"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><i class="fa-brands fa-html5"></i> Html</a></li>
+                        <li class="mb-2"><a href="https://www.w3schools.com/css/"><i class="fa-brands fa-css3-alt"></i> Css</a></li>
+                        <li class="mb-2"><a href="https://trello.com/pt-BR"><i class="fa-brands fa-trello"></i> Trello</a></li>
+                        <li class="mb-2"><a href="https://www.figma.com/"><i class="fa-brands fa-figma"></i> Figma</a></li>
+                        <li class="mb-2"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><i class="fa-brands fa-js-square"></i> Javacript</a></li>
+                        <li class="mb-2"><a href="https://getbootstrap.com/"><i class="fa-brands fa-bootstrap"></i> bootstrap</a></li>
                     </ul>
                 </div>
             </div>
