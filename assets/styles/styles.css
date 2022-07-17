@@ -7,7 +7,7 @@
  {
    margin: 0;
    padding: 0;
-   
+
    /* fazê-lo parecer decente o suficiente*/
    background: #232323;
    color: #cdcdcd;
@@ -17,34 +17,34 @@
     max: width 100%;
    }
  }
- 
+
  #menuToggle
  {
    display: block;
    position: relative;
    top: 50px;
    left: 50px;
-   
+
    z-index: 1;
-   
+
    -webkit-user-select: none;
    user-select: none;
  }
- 
+
  #menuToggle a
  {
    text-decoration: none;
    color: #232323;
-   
+
    transition: color 0.3s ease;
  }
- 
+
  #menuToggle a:hover
  {
    color: tomato;
  }
- 
- 
+
+
  #menuToggle input
  {
    display: block;
@@ -53,15 +53,15 @@
    position: absolute;
    top: -7px;
    left: -5px;
-   
+
    cursor: pointer;
-   
+
    opacity: 0; /* esconde */
    z-index: 2; /* e coloque sobre o hambúrguer*/
-   
+
    -webkit-touch-callout: none;
  }
- 
+
  /*
   * Configuração do icone do hamburguer
   */
@@ -72,34 +72,34 @@
    height: 4px;
    margin-bottom: 5px;
    position: relative;
-   
+
    background: #cdcdcd;
    border-radius: 3px;
-   
+
    z-index: 1;
-   
+
    transform-origin: 4px 0px;
 
     /*
   * transição do menu
   */
-   
+
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                opacity 0.55s ease;
  }
- 
+
  #menuToggle span:first-child
  {
    transform-origin: 0% 0%;
  }
- 
+
  #menuToggle span:nth-last-child(2)
  {
    transform-origin: 0% 100%;
  }
- 
- /* 
+
+ /*
 * Transforme todas as fatias de hambúrguer
   * em uma cruz.
   */
@@ -109,7 +109,7 @@
    transform: rotate(45deg) translate(-2px, -1px);
    background: #232323;
  }
- 
+
  /*
   * esconde o meio
   */
@@ -118,7 +118,7 @@
    opacity: 0;
    transform: rotate(0deg) scale(0.2, 0.2);
  }
- 
+
  /*
   * Ohyeah and the last one should go the other direction
   */
@@ -126,11 +126,11 @@
  {
    transform: rotate(-45deg) translate(0, -1px);
  }
- 
+
  /*
   * Faz o menu ficar posicionado
   * no canto superior da tela
-  */ 
+  */
  #menu
  {
    position: absolute;
@@ -138,31 +138,29 @@
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
-   
+
    background: #ededed;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* parar de piscar de texto no navegador */
-   
+
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
-   
+
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
- 
- #menu li
- {
+
+#menu li {
    padding: 10px 0;
    font-size: 22px;
- }
- 
+}
+
  /*
   * Direção que o menu desliza (esquerda)
   */
- #menuToggle input:checked ~ ul
- {
+#menuToggle input:checked ~ ul {
    transform: none;
- }
+}
 
 
  /*
@@ -171,48 +169,6 @@
  * Gama Academy
  */
 /* bloco pra esconder a logo da investing */
-.bloco-branco {
-    background-color: white;
-    font-size: 35px;
-    width: 100%;
-    position: absolute;
-    color: white;
-}
-
-footer {
-    width: 100%;
-    height: 100%;
-    background-color: #27262c !important;
-}
-
-.home-footer {
-    color: #9a6aff;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-li a {
-    color: white;
-}
-
-li a:hover {
-    color: white;
-    text-decoration: underline white;
-}
-
-.btn-cookies {
-    border-color: black;
-}
-
-.box-cookies {
-    width: 100%;
-    bottom: 0;
-}
-
-.ultimo-hr {
-    background-color: white;
-}
-
 .cardContainer {
   display: flex;
   width: 90%;
@@ -229,7 +185,7 @@ li a:hover {
   color: gray;
   font-weight: 600;
   font-size: 1.5rem;
-} 
+}
 
 .card {
     border-radius: 25px;
@@ -263,4 +219,74 @@ li a:hover {
 
 .card button:hover {
   filter: brightness(0.8)
+}
+
+/*
+  lucas 17/07
+*/
+
+.bloco-branco {
+  background-color: white;
+  font-size: 35px;
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.home-footer {
+  color: #9a6aff;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: white;
+  text-decoration: underline white;
+}
+
+.btn-cookies {
+  border-color: black;
+}
+
+.box-cookies {
+  width: 100%;
+  bottom: 0;
+}
+
+.ultimo-hr {
+  background-color: white;
+}
+
+.h2-contato {
+  padding-top: 30px;
+  color: blueviolet;
+}
+
+.justify-content-evenly > div:nth-child(5) > form:nth-child(2) > div:nth-child(1) > label:nth-child(1) {
+  padding-left: 10px;
+}
+
+#exampleFormControlInput1 {
+  min-width:315px;
+  max-width:500px;
+  border-left-width: 1px;
+  margin-left: 10px;
+}
+
+.justify-content-evenly > div:nth-child(5) > form:nth-child(2) > div:nth-child(2) > label:nth-child(1) {
+  padding-left: 10px;
+}
+
+#exampleFormControlTextarea1 {
+  margin-left: 10px;
 }
